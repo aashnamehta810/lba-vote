@@ -1,0 +1,183 @@
+
+/* Color system */
+$white: #ffffff;
+$offWhite_F2F2F2: #F2F2F2;
+$black: #000000;
+$black_151821: #151821;
+
+$orange_EC7223: #EC7223;
+
+$blue_111342: #111342;
+$blue_040524: #040524;
+$blue_3874BA: #3874BA;
+$blue_6ECDDD: #6ECDDD;
+
+$red_eb222a: #eb222a;
+
+$green_02b39f: #02b39f;
+$green_1C9E3C: #1C9E3C;
+$green_a3cd39: #a3cd39;
+$green_1bd741: #1bd741;
+
+$yellow_f7bd1b: #f7bd1b;
+$yellow_EBA822: #EBA822;
+
+
+/* Transition */
+$transition_3ms: 0.3s all ease-in-out;
+$transition_6ms: 0.6s all ease-in-out;
+$transition_9ms: 0.9s all ease-in-out;
+
+/* FontFamily */
+$Rajdhani_FontFamily: 'Rajdhani';
+$Saira_FontFamily: 'Saira';
+
+
+
+
+
+/* Font Size */
+$f9: 9px;
+$f10: 10px;
+$f12: 12px;
+$f13: 13px;
+$f14: 14px;
+$f15: 15px;
+$f16: 16px;
+$f17: 17px;
+$f18: 18px;
+$f19: 19px;
+$f20: 20px;
+$f21: 21px;
+$f22: 22px;
+$f23: 23px;
+$f24: 24px;
+$f25: 25px;
+$f26: 26px;
+$f27: 27px;
+$f28: 28px;
+$f30: 30px;
+$f32: 32px;
+$f33: 33px;
+$f34: 34px;
+$f35: 35px;
+$f36: 36px;
+$f38: 38px;
+$f40: 40px;
+$f42: 42px;
+$f43: 43px;
+$f45: 45px;
+$f46: 46px;
+$f48: 48px;
+$f50: 50px;
+$f51: 51px;
+$f52: 52px;
+$f53: 53px;
+$f54: 54px;
+$f55: 55px;
+$f56: 56px;
+$f60: 60px;
+$f62: 62px;
+$f63: 63px;
+$f65: 65px;
+$f66: 66px;
+$f67: 67px;
+$f68: 68px;
+$f70: 70px;
+$f72: 72px;
+$f75: 75px;
+$f80: 80px;
+$f84: 84px;
+$f85: 85px;
+$f88: 88px;
+$f90: 90px;
+$f100: 100px;
+$f110: 110px;
+$f120: 120px;
+$f130: 130px;
+
+
+/* Media Query Break Point START */
+
+
+$brkmn1921: '(min-width:1921px)';
+$brkmn1859: '(min-width:1859px)';
+$brkmn1700: '(min-width:1700px)';
+$brkmn1600: '(min-width:1600px)';
+$brkmn1536: '(min-width:1536px)';
+$brkmn1450: '(min-width:1450px)';
+$brkmn1400: '(min-width:1400px)';
+$brkmn1367: '(min-width:1367px)';
+$brkmn1320: '(min-width:1320px)';
+$brkmn1280: '(min-width:1280px)';
+$brkmn1151: '(min-width:1151px)';
+$brkmn1024: '(min-width:1024px)';
+$brkmn992: '(min-width:992px)';
+$brkmn768: '(min-width:768px)';
+$brkmn640: '(min-width:640px)';
+$brkmn576: '(min-width:576px)';
+$brkmn481: '(min-width:481px)';
+$brkmx1888: '(max-width: 1888px)';
+$brkmx1799: '(max-width: 1799px)';
+$brkmx1699: '(max-width: 1699px)';
+$brkmx1599: '(max-width: 1599px)';
+$brkmx1535: '(max-width: 1535px)';
+$brkmx1500: '(max-width: 1500px)';
+$brkmx1449: '(max-width: 1449px)';
+$brkmx1400: '(max-width: 1400px)';
+$brkmx1399: '(max-width: 1399px)';
+$brkmx1366: '(max-width: 1366px)';
+$brkmx1320: '(max-width: 1320px)';
+$brkmx1300: '(max-width: 1300px)';
+$brkmx1279: '(max-width: 1279px)';
+$brkmx1199: '(max-width: 1199px)';
+$brkmx1170: '(max-width: 1170px)';
+$brkmx1165: '(max-width: 1165px)';
+$brkmx1150: '(max-width: 1150px)';
+$brkmx1099: '(max-width: 1099px)';
+$brkmx1023: '(max-width: 1023px)';
+$brkmx1000: '(max-width: 1000px)';
+$brkmx992: '(max-width: 992px)';
+$brkmx991: '(max-width: 991px)';
+$brkmx980: '(max-width: 980px)';
+$brkmx921: '(max-width: 921px)';
+$brkmx901: '(max-width: 901px)';
+$brkmx812: '(max-width: 812px)';
+$brkmx767: '(max-width: 767px)';
+$brkmx639: '(max-width: 639px)';
+$brkmx575: '(max-width: 575px)';
+$brkmx480: '(max-width: 480px)';
+$brkmx450: '(max-width: 450px)';
+$brkmx400: '(max-width: 400px)';
+$brkmx374: '(max-width: 374px)';
+$brkmx365: '(max-width: 365px)';
+
+
+$brk1536-1888: '(min-width: 1536px) and (max-width: 1888px)';
+$brk1536-1700: '(min-width: 1536px) and (max-width: 1700px)';
+$brk1400-1700: '(min-width: 1400px) and (max-width: 1700px)';
+$brk1280-1700: '(min-width: 1280px) and (max-width: 1700px)';
+$brk1280-1535: '(min-width: 1280px) and (max-width: 1535px)';
+$brk1280-1479: '(min-width: 1280px) and (max-width: 1479px)';
+$brk1280-1399: '(min-width: 1280px) and (max-width: 1399px)';
+$brk1200-1366: '(min-width: 1200px) and (max-width: 1366px)';
+$brk1024-1279: '(min-width: 1024px) and (max-width: 1279px)';
+$brk1100-1199: '(min-width: 1100px) and (max-width: 1199px)';
+$brk992-1367: '(min-width: 992px) and (max-width: 1367px)';
+$brk992-1199: '(min-width: 992px) and (max-width: 1199px)';
+$brk992-1099: '(min-width: 992px) and (max-width: 1099px)';
+$brk768-1279: '(min-width: 768px) and (max-width: 1279px)';
+$brk768-1024: '(min-width: 768px) and (max-width: 1024px)';
+$brk768-991: '(min-width: 768px) and (max-width: 991px)';
+
+
+
+/* Media Query Break Point START */
+
+@mixin respond-to($media) {
+    @media only screen and #{$media} {
+        @content;
+    } 
+}
+
+/* Media Query Break Point END */

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="650.36" height="650.36" viewBox="0 0 650.36 650.36">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_319" data-name="Ellipse 319" cx="325.18" cy="325.18" r="325.18" transform="translate(982.588 217.393)" fill="none" stroke="#fff" stroke-width="2"/>
+    </clipPath>
+  </defs>
+  <g id="billboard-progress-bg2" transform="translate(-982.588 -217.393)" clip-path="url(#clip-path)">
+    <g id="Group_5974" data-name="Group 5974">
+      <path id="Path_13528" data-name="Path 13528" d="M15.66,358.7A320.246,320.246,0,0,1,0,259.471C0,152.781,52.126,58.261,132.3,0" transform="matrix(0.819, 0.574, -0.574, 0.819, 1194.521, 146.114)" fill="none" stroke="#ec7223" stroke-miterlimit="10" stroke-width="8" opacity="0.26"/>
+      <path id="Path_13532" data-name="Path 13532" d="M0,61.071Q2,59.616,4.012,58.2a320.667,320.667,0,0,1,372.361,2.786" transform="matrix(0.819, 0.574, -0.574, 0.819, 1337.92, 171.97)" fill="none" stroke="#ec7223" stroke-linecap="round" stroke-miterlimit="10" stroke-width="8"/>
+      <path id="Path_13529" data-name="Path 13529" d="M0,0Q8.07,5.857,15.767,12.211A319.9,319.9,0,0,1,132.413,259.554a320.165,320.165,0,0,1-15.576,98.972" transform="matrix(0.819, 0.574, -0.574, 0.819, 1611.244, 437.806)" fill="none" stroke="#ec7223" stroke-linecap="round" stroke-miterlimit="10" stroke-width="8"/>
+      <path id="Path_13530" data-name="Path 13530" d="M304.965,0C263.259,128.591,142.485,221.561,0,221.561" transform="matrix(0.819, 0.574, -0.574, 0.819, 1251.498, 623.587)" fill="none" stroke="#ec7223" stroke-miterlimit="10" stroke-width="8" opacity="0.26"/>
+      <path id="Path_13531" data-name="Path 13531" d="M304.882,221.3C162.488,221.3,41.781,128.459,0,0" transform="matrix(0.819, 0.574, -0.574, 0.819, 1001.605, 448.924)" fill="none" stroke="#ec7223" stroke-miterlimit="10" stroke-width="8" opacity="0.26"/>
+    </g>
+  </g>
+</svg>

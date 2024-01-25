@@ -1,0 +1,17 @@
+<svg id="sports-overlay-btn-icon2" xmlns="http://www.w3.org/2000/svg" width="27.782" height="27.782" viewBox="0 0 27.782 27.782">
+  <g id="Group_6099" data-name="Group 6099">
+    <g id="Group_6098" data-name="Group 6098">
+      <circle id="Ellipse_426" data-name="Ellipse 426" cx="1.106" cy="1.106" r="1.106" transform="translate(19.837 10.349)" fill="#ec7223"/>
+      <path id="Path_13571" data-name="Path 13571" d="M23.441,2.17H22.03V1.085a1.085,1.085,0,0,0-2.17,0V2.17H14.922V1.085a1.085,1.085,0,0,0-2.17,0V2.17H7.868V1.085a1.085,1.085,0,0,0-2.17,0V2.17H4.341A4.346,4.346,0,0,0,0,6.511v16.93a4.346,4.346,0,0,0,4.341,4.341h8.3a1.085,1.085,0,1,0,0-2.17h-8.3a2.173,2.173,0,0,1-2.17-2.17V6.511a2.173,2.173,0,0,1,2.17-2.17H5.7V5.426a1.085,1.085,0,0,0,2.17,0V4.341h4.884V5.426a1.085,1.085,0,0,0,2.17,0V4.341H19.86V5.426a1.085,1.085,0,0,0,2.17,0V4.341h1.411a2.173,2.173,0,0,1,2.17,2.17V12.7a1.085,1.085,0,1,0,2.17,0V6.511A4.346,4.346,0,0,0,23.441,2.17Z" fill="#ec7223"/>
+      <path id="Path_13572" data-name="Path 13572" d="M276.566,270a6.566,6.566,0,1,0,6.566,6.566A6.573,6.573,0,0,0,276.566,270Zm0,10.961a4.4,4.4,0,1,1,4.4-4.4A4.4,4.4,0,0,1,276.566,280.961Z" transform="translate(-255.349 -255.349)" fill="#ec7223"/>
+      <path id="Path_13573" data-name="Path 13573" d="M373.659,332.225h-.488v-1.139a1.085,1.085,0,1,0-2.17,0v2.225a1.085,1.085,0,0,0,1.085,1.085h1.574a1.085,1.085,0,1,0,0-2.17Z" transform="translate(-350.869 -312.094)" fill="#ec7223"/>
+      <ellipse id="Ellipse_427" data-name="Ellipse 427" cx="1.005" cy="1.106" rx="1.005" ry="1.106" transform="translate(15.213 10.349)" fill="#ec7223"/>
+      <circle id="Ellipse_428" data-name="Ellipse 428" cx="1.106" cy="1.106" r="1.106" transform="translate(10.387 14.973)" fill="#ec7223"/>
+      <ellipse id="Ellipse_429" data-name="Ellipse 429" cx="1.005" cy="1.106" rx="1.005" ry="1.106" transform="translate(5.763 10.349)" fill="#ec7223"/>
+      <ellipse id="Ellipse_430" data-name="Ellipse 430" cx="1.005" cy="1.106" rx="1.005" ry="1.106" transform="translate(5.763 14.973)" fill="#ec7223"/>
+      <ellipse id="Ellipse_431" data-name="Ellipse 431" cx="1.005" cy="1.106" rx="1.005" ry="1.106" transform="translate(5.763 19.799)" fill="#ec7223"/>
+      <circle id="Ellipse_432" data-name="Ellipse 432" cx="1.106" cy="1.106" r="1.106" transform="translate(10.387 19.799)" fill="#ec7223"/>
+      <circle id="Ellipse_433" data-name="Ellipse 433" cx="1.106" cy="1.106" r="1.106" transform="translate(10.387 10.349)" fill="#ec7223"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,229 @@
+@mixin Heading60 {
+    font-size: $f60;
+    font-weight: bold;
+    line-height: 70px;
+
+    @include respond-to($brkmx1279) {
+        font-size: $f50;
+        line-height: 60px;
+    }
+    @include respond-to($brkmx1023) {
+        font-size: $f40;
+        line-height: 50px;
+    }
+    @include respond-to($brkmx767) {
+        font-size: $f35;
+        line-height: 45px;
+    }
+}
+
+@mixin Heading50($textColor , $spanTextColor) {
+    font-size: $f50;
+    font-weight: bold;
+    line-height: 55px;
+    color: $textColor;
+    text-transform: uppercase;
+
+    @include respond-to($brkmx1279) {
+        font-size: $f45;
+        line-height: 50px;
+    }
+    @include respond-to($brkmx1023) {
+        font-size: $f40;
+        line-height: 45px;
+    }
+    @include respond-to($brkmx767) {
+        font-size: $f35;
+        line-height: 40px;
+    }
+
+    span {
+        color: $spanTextColor;
+    }
+}
+
+@mixin OrangeBtn {
+    @apply relative inline-flex justify-center items-center uppercase w-auto ;
+    background-color: $orange_EC7223;
+    color: $white;
+    height: 40px;
+    padding: 8px 23px;
+    border-radius: 7px;
+    box-shadow: none;
+    font-size: $f17;
+    font-weight: 600;
+    font-family: $Rajdhani_FontFamily;
+    transition: $transition_3ms;
+
+    @include respond-to($brkmx1023) {
+        height: 40px;
+        font-size: $f16;
+    }
+
+    // &.active, &:hover {
+    //     background-color: $blue_3874BA;
+    //     color: $white;
+    // }
+
+    &.active, &:hover {
+        background-color: $blue_3874BA;
+        color: $white;
+
+        // img {
+        //     filter: brightness(0) invert(1);
+        // }
+    }
+
+    // img {
+    //     margin-right: 5px;
+    //     transition: $transition_3ms;
+    // }
+}
+
+@mixin OrangeOutlineBtn {
+    @apply relative font-bold inline-flex justify-center items-center uppercase w-auto bg-transparent ;
+    border: 2px solid $orange_EC7223;
+    color: $white;
+    height: 55px;
+    padding: 8px 34px;
+    border-radius: 7px;
+    box-shadow: none;
+    font-size: $f25;
+    font-family: $Rajdhani_FontFamily;
+    transition: $transition_3ms;
+
+    @include respond-to($brkmx1023) {
+        font-size: $f21;
+        height: 48px;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    &.active, &:hover {
+        background-color: $orange_EC7223;
+        color: $white;
+
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    img {
+        margin-right: 5px;
+        transition: $transition_3ms;
+    }
+}
+
+@mixin BlueOutlineBtn {
+    @apply relative font-bold inline-flex justify-center items-center uppercase w-auto bg-transparent ;
+    border: 2px solid $blue_3874BA;
+    color: $white;
+    height: 55px;
+    padding: 8px 34px;
+    border-radius: 7px;
+    box-shadow: none;
+    font-size: $f25;
+    font-family: $Rajdhani_FontFamily;
+    transition: $transition_3ms;
+
+    @include respond-to($brkmx1023) {
+        font-size: $f21;
+        height: 48px;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    &.active, &:hover {
+        background-color: $blue_3874BA;
+        color: $white;
+
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    img {
+        margin-right: 5px;
+        transition: $transition_3ms;
+    }
+}
+
+@mixin BlueBtn {
+    @apply relative font-bold inline-flex justify-center items-center uppercase w-auto ;
+    background-color: $blue_111342;
+    border: 2px solid $blue_111342;
+    color: $white;
+    height: 55px;
+    padding: 8px 21px;
+    border-radius: 7px;
+    box-shadow: none;
+    font-size: $f25;
+    font-family: $Rajdhani_FontFamily;
+    transition: $transition_3ms;
+
+    @include respond-to($brkmx1023) {
+        font-size: $f21;
+        height: 48px;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    &.active, &:hover {
+        background-color: $blue_3874BA;
+        border-color: $blue_3874BA;
+        color: $white;
+
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    img {
+        margin-right: 10px;
+        transition: $transition_3ms;
+    }
+}
+
+@mixin LightBlueBtn {
+    @apply relative font-bold inline-flex justify-center items-center uppercase w-auto ;
+    background-color: $blue_3874BA;
+    color: $white;
+    height: 55px;
+    padding: 11px 46px;
+    border-radius: 7px;
+    box-shadow: none;
+    font-size: $f25;
+    font-family: $Rajdhani_FontFamily;
+    transition: $transition_3ms;
+
+    @include respond-to($brkmx1023) {
+        height: 40px;
+        font-size: $f20;
+    }
+
+    &.active, &:hover {
+        background-color: $orange_EC7223;
+        color: $white;
+    }
+}
+
+@mixin LightBlueGradient {
+    background: -moz-linear-gradient(left,  rgba(56,116,186,1) 0%, rgba(17,19,66,0) 100%);
+    background: -webkit-linear-gradient(left,  rgba(56,116,186,1) 0%,rgba(17,19,66,0) 100%);
+    background: linear-gradient(to right,  rgba(56,116,186,1) 0%,rgba(17,19,66,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3874ba', endColorstr='#00111342',GradientType=1 );
+}
+
+@mixin DarkBlueGradient {
+    background: -moz-linear-gradient(left,  rgba(17,19,66,1) 0%, rgba(17,19,66,0) 100%);
+    background: -webkit-linear-gradient(left,  rgba(17,19,66,1) 0%,rgba(17,19,66,0) 100%);
+    background: linear-gradient(to right,  rgba(17,19,66,1) 0%,rgba(17,19,66,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111342', endColorstr='#00111342',GradientType=1 );
+}
+
+@mixin OrangeGradient {
+    background: -moz-linear-gradient(left,  rgba(236,114,35,1) 0%, rgba(17,19,66,0) 100%);
+    background: -webkit-linear-gradient(left,  rgba(236,114,35,1) 0%,rgba(17,19,66,0) 100%);
+    background: linear-gradient(to right,  rgba(236,114,35,1) 0%,rgba(17,19,66,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec7223', endColorstr='#00111342',GradientType=1 );
+}
