@@ -140,7 +140,7 @@ const Header: React.FC<HeaderProps> = ({ themeoptions }) => {
             </div> */}
             <div className="mobile-header-btn-box flex xl:hidden">
               <Link
-                href="/register"
+                href="https://lbaleagues.vercel.app/register"
                 className="orange-btn"
                 onClick={handleRegisterLink}
               >
@@ -516,7 +516,11 @@ const Header: React.FC<HeaderProps> = ({ themeoptions }) => {
           </nav>
           <div className="header-contact-btn">
             <div className="header-btn-box relative hidden xl:flex items-center">
-              <Link href="/register" className="orange-btn">
+              <Link
+                href="https://lbaleagues.vercel.app/register"
+                className="orange-btn"
+                target="_blank"
+              >
                 Register
               </Link>
               <span className="seperator" />

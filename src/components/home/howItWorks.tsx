@@ -74,8 +74,9 @@ const HowItWorks: React.FC<HowItWorksProps> = ({ data }) => {
           {data.countMeInButtonLink && (
             <div className="btn-block text-center">
               <Link
-                href={data.countMeInButtonLink}
+                href="https://lbaleagues.vercel.app/register"
                 className="orangeOutline-btn"
+                target="_blank"
               >
                 <img src="assets/images/note-icon.svg" alt="icon" />
                 <span>{data.countMeInButtonText}</span>

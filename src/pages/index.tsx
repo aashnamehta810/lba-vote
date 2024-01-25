@@ -1,8 +1,15 @@
 /* eslint-disable import/no-named-as-default */
 import { useEffect } from 'react';
 
+import Adrenaline from '@/components/home/adrenaline';
 import HomeBanner from '@/components/home/homeBanner';
+import HowItWorks from '@/components/home/howItWorks';
+import LBAMarketing from '@/components/home/lbaMarketing';
+import LBASliderSection from '@/components/home/lbaSliderSection';
 import ProLeague from '@/components/home/proLeague';
+import Sponsors from '@/components/home/sponsors';
+import Testimonials from '@/components/home/testimonial';
+import YouChoose from '@/components/home/youChoose';
 import GraphAPI from '@/service/graphQL';
 
 interface HomeProps {
@@ -20,7 +27,14 @@ const Index: React.FC<HomeProps> = ({ homeDetails, themeOptions }) => {
   return (
     <>
       <HomeBanner data={homeDetails} />
-      <ProLeague themeOptions={themeOptions} />
+      <ProLeague data={homeDetails} themeOptions={themeOptions} />
+      <Adrenaline data={homeDetails} />
+      <YouChoose data={homeDetails} />
+      <LBASliderSection data={homeDetails} />
+      <Testimonials data={homeDetails} />
+      <LBAMarketing data={homeDetails} />
+      <Sponsors data={themeOptions} />
+      <HowItWorks data={homeDetails} />
     </>
   );
 };

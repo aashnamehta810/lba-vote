@@ -55,7 +55,11 @@ const YouChoose: React.FC<ChooseProps> = ({ data }) => {
           )}
           {data.exploreLbaLink && (
             <div className="choose-btn-block text-center">
-              <Link href={data.exploreLbaLink} className="blue-btn explore-btn">
+              <Link
+                href="https://lbaleagues.vercel.app/about/"
+                target="_blank"
+                className="blue-btn explore-btn"
+              >
                 <img src="assets/images/explore-icon.svg" alt="icon" />
                 <span>{data.exploreLbaText}</span>
               </Link>

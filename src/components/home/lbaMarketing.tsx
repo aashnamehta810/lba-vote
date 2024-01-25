@@ -74,7 +74,11 @@ const LBAMarketing: React.FC<LBAMarketingProps> = ({ data }) => {
           </div>
           {data.imInButtonLink && (
             <div className="btn-box">
-              <Link className="lightblue-btn" href={data.imInButtonLink}>
+              <Link
+                className="lightblue-btn"
+                href="https://lbaleagues.vercel.app/sponsors/"
+                target="_blank"
+              >
                 {data.imInButtonText}
               </Link>
             </div>
