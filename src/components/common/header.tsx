@@ -189,7 +189,7 @@ const Header: React.FC<HeaderProps> = ({ themeoptions }) => {
                 <li className="menu-item">
                   <Link
                     href="https://lbaleagues.vercel.app/"
-                    className="nav-link active"
+                    className="nav-link"
                     onClick={handleNavLink}
                     target="_blank"
                   >
