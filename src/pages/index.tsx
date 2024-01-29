@@ -15,9 +15,14 @@ import GraphAPI from '@/service/graphQL';
 interface HomeProps {
   homeDetails: any;
   themeOptions: any;
+  teamDetails: any;
 }
 
-const Index: React.FC<HomeProps> = ({ homeDetails, themeOptions }) => {
+const Index: React.FC<HomeProps> = ({
+  homeDetails,
+  themeOptions,
+  teamDetails,
+}) => {
   useEffect(() => {
     document.body.classList.add('home');
     return () => {
@@ -27,7 +32,11 @@ const Index: React.FC<HomeProps> = ({ homeDetails, themeOptions }) => {
   return (
     <>
       <HomeBanner data={homeDetails} />
-      <ProLeague data={homeDetails} themeOptions={themeOptions} />
+      <ProLeague
+        data={homeDetails}
+        themeOptions={themeOptions}
+        teamDetails={teamDetails}
+      />
       <Adrenaline data={homeDetails} />
       <YouChoose data={homeDetails} />
       <LBASliderSection data={homeDetails} />
@@ -44,11 +53,13 @@ export default Index;
 export async function getStaticProps() {
   const homeDetails = await GraphAPI.homeSettings();
   const themeOptions = await GraphAPI.themeOptions();
+  const teamDetails = await GraphAPI.teamData();
 
   return {
     props: {
       homeDetails: homeDetails.data.data.pageBy.homeSettings,
       themeOptions: themeOptions.data.data.acfOptionsThemeOptions.themeOptions,
+      teamDetails: teamDetails || null,
     },
   };
 }

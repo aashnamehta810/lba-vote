@@ -1,6 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 
-const TeamSection = () => {
+const TeamSection = (data: any) => {
+  const teamData = data?.data || null;
   // const isImageFile = (url: any) => {
   //   const imageExtensions = [
   //     '.png',
@@ -25,173 +26,49 @@ const TeamSection = () => {
         </div>
 
         <div className="team-grid-block">
-          <div className="team-card" key="team-1">
-            <div className="item-box">
-              <div className="img-box">
-                <img
-                  src="https://placehold.co/253X335"
-                  alt="image"
-                  width={253}
-                  height={335}
-                />
-              </div>
-              <div className="content-box">
-                <div className="team-logo">
+          {teamData.map((item: any, index: any) => {
+            return (
+              <div className="team-card" key={`team-${index}`}>
+                <div className="item-box">
+                  <div className="img-box">
+                    <img
+                      src={item.teamShirt}
+                      alt="image"
+                      width={253}
+                      height={335}
+                    />
+                  </div>
+                  <div className="content-box">
+                    {/* <div className="team-logo">
                   <img src="https://placehold.co/224X52" alt="image" />
+                </div> */}
+                    <div className="btn-group">
+                      <a
+                        href={`https://wa.me/17329949780?text=Vote%20for%20${encodeURIComponent(
+                          item.name
+                        )}`}
+                        className="primary-btn"
+                      >
+                        Vote By Whatsapp
+                      </a>
+                      <a
+                        href={`mailto:shimon@lbaleagues.com?subject=Vote%20for%20${encodeURIComponent(
+                          item.name
+                        )}&body=Vote%20for%20${encodeURIComponent(item.name)}`}
+                        className="secondary-btn"
+                      >
+                        Email By Email
+                      </a>
+                    </div>
+                    {/* <h4 className="team-name">
+                      <span>{item.name}</span>
+                    </h4> */}
+                  </div>
                 </div>
-                <h4 className="team-name">
-                  <span>Team Name</span>
-                </h4>
               </div>
-            </div>
-          </div>
-          <div className="team-card" key="team-1">
-            <div className="item-box">
-              <div className="img-box">
-                <img
-                  src="https://placehold.co/253X335"
-                  alt="image"
-                  width={253}
-                  height={335}
-                />
-              </div>
-              <div className="content-box">
-                <div className="team-logo">
-                  <img src="https://placehold.co/224X52" alt="image" />
-                </div>
-                <h4 className="team-name">
-                  <span>Team Name</span>
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div className="team-card" key="team-1">
-            <div className="item-box">
-              <div className="img-box">
-                <img
-                  src="https://placehold.co/253X335"
-                  alt="image"
-                  width={253}
-                  height={335}
-                />
-              </div>
-              <div className="content-box">
-                <div className="team-logo">
-                  <img src="https://placehold.co/224X52" alt="image" />
-                </div>
-                <h4 className="team-name">
-                  <span>Team Name</span>
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div className="team-card" key="team-1">
-            <div className="item-box">
-              <div className="img-box">
-                <img
-                  src="https://placehold.co/253X335"
-                  alt="image"
-                  width={253}
-                  height={335}
-                />
-              </div>
-              <div className="content-box">
-                <div className="team-logo">
-                  <img src="https://placehold.co/224X52" alt="image" />
-                </div>
-                <h4 className="team-name">
-                  <span>Team Name</span>
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div className="team-card" key="team-1">
-            <div className="item-box">
-              <div className="img-box">
-                <img
-                  src="https://placehold.co/253X335"
-                  alt="image"
-                  width={253}
-                  height={335}
-                />
-              </div>
-              <div className="content-box">
-                <div className="team-logo">
-                  <img src="https://placehold.co/224X52" alt="image" />
-                </div>
-                <h4 className="team-name">
-                  <span>Team Name</span>
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div className="team-card" key="team-1">
-            <div className="item-box">
-              <div className="img-box">
-                <img
-                  src="https://placehold.co/253X335"
-                  alt="image"
-                  width={253}
-                  height={335}
-                />
-              </div>
-              <div className="content-box">
-                <div className="team-logo">
-                  <img src="https://placehold.co/224X52" alt="image" />
-                </div>
-                <h4 className="team-name">
-                  <span>Team Name</span>
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div className="team-card" key="team-1">
-            <div className="item-box">
-              <div className="img-box">
-                <img
-                  src="https://placehold.co/253X335"
-                  alt="image"
-                  width={253}
-                  height={335}
-                />
-              </div>
-              <div className="content-box">
-                <div className="team-logo">
-                  <img src="https://placehold.co/224X52" alt="image" />
-                </div>
-                <h4 className="team-name">
-                  <span>Team Name</span>
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div className="team-card" key="team-1">
-            <div className="item-box">
-              <div className="img-box">
-                <img
-                  src="https://placehold.co/253X335"
-                  alt="image"
-                  width={253}
-                  height={335}
-                />
-              </div>
-              <div className="content-box">
-                <div className="team-logo">
-                  <img src="https://placehold.co/224X52" alt="image" />
-                </div>
-                <h4 className="team-name">
-                  <span>Team Name</span>
-                </h4>
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
-
-        {/* <div className="btn-box">
-          <Link className="see-more-btn lightblue-btn" href="/">
-            see more
-          </Link>
-        </div> */}
       </div>
     </div>
   );

@@ -814,24 +814,55 @@ export default class GraphAPI {
     });
   }
 
-  static teamData(teamIdList: any): Promise<AxiosResponse> {
+  static async teamData(): Promise<any> {
     const tokenTicket = process.env.token;
-    const params = {
-      constraints: JSON.stringify([
-        {
-          key: '_id',
-          constraint_type: 'in',
-          value: teamIdList,
-        },
-      ]),
-    };
+    let cursor = 0;
+    let allResults: any = [];
 
-    return axios.get(`${dataURL}/team`, {
-      params,
-      headers: {
-        Authorization: `Bearer ${tokenTicket}`,
-      },
-    });
+    async function fetchAllResults(): Promise<AxiosResponse> {
+      let hasMoreResults = true;
+
+      while (hasMoreResults) {
+        const params = {
+          constraints: JSON.stringify([
+            {
+              key: 'teamShirt',
+              constraint_type: 'is_not_empty',
+            },
+          ]),
+          cursor,
+        };
+
+        try {
+          // eslint-disable-next-line no-await-in-loop
+          const response = await axios.get(`${dataURL}/team`, {
+            params,
+            headers: {
+              Authorization: `Bearer ${tokenTicket}`,
+            },
+          });
+
+          const currentResults = response.data?.response?.results; // Adjust this based on the actual response structure
+
+          // Append current results to the overall results
+          allResults = allResults.concat(currentResults);
+
+          // Update offset for the next API call
+          if (response.data?.response?.remaining > 0) {
+            cursor += 100;
+            hasMoreResults = true;
+          } else {
+            hasMoreResults = false;
+          }
+        } catch (error) {
+          console.error('Error fetching results:', error);
+          break; // Exit the loop on error
+        }
+      }
+      return allResults;
+    }
+
+    return fetchAllResults();
   }
 
   static locationData(): Promise<AxiosResponse> {

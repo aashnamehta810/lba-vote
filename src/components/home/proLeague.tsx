@@ -10,8 +10,13 @@ import CustomCounter from '../customCounter/customCounter';
 interface ProLeagueProps {
   data?: any;
   themeOptions?: any;
+  teamDetails?: any;
 }
-const ProLeague: React.FC<ProLeagueProps> = ({ data, themeOptions }) => {
+const ProLeague: React.FC<ProLeagueProps> = ({
+  data,
+  themeOptions,
+  teamDetails,
+}) => {
   return (
     <>
       <div className="home-counter-section" data-aos="fade-right">
@@ -41,7 +46,7 @@ const ProLeague: React.FC<ProLeagueProps> = ({ data, themeOptions }) => {
           </div>
         </div>
       </div>
-      <TeamSection />
+      <TeamSection data={teamDetails} />
       {data.proleagueBlocks && (
         <div className="pro-leagues-section">
           <div className="loader-animation">

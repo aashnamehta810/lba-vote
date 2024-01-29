@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 
 interface FooterProps {
   themeoptions?: any;
@@ -7,7 +6,6 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ themeoptions, footerMenu }) => {
-  const router = useRouter();
   return (
     <footer>
       {themeoptions?.whatsappLink && (
@@ -79,20 +77,86 @@ const Footer: React.FC<FooterProps> = ({ themeoptions, footerMenu }) => {
                 {footerMenu && (
                   <div className="footer-navbar-block">
                     <ul className="menu nav-menu">
-                      {footerMenu.map((item: any, index) => {
-                        return (
-                          <li
-                            key={`menuFooter-${index}`}
-                            className={
-                              router.pathname === item.url
-                                ? 'menu-item active'
-                                : 'menu-item'
-                            }
-                          >
-                            <Link href={item.url}>{item.label}</Link>
-                          </li>
-                        );
-                      })}
+                      <li className="menu-item">
+                        <Link
+                          href="https://lbaleagues.vercel.app/"
+                          target="_blank"
+                        >
+                          Home
+                        </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link
+                          href="https://lbaleagues.vercel.app/about/"
+                          target="_blank"
+                        >
+                          About
+                        </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link
+                          href="https://lbaleagues.vercel.app/sponsors/"
+                          target="_blank"
+                        >
+                          Sponsors
+                        </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link
+                          href="https://lbaleagues.vercel.app/sponsors-directory/"
+                          target="_blank"
+                        >
+                          Directory
+                        </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link
+                          href="https://lbaleagues.vercel.app/juniors/"
+                          target="_blank"
+                        >
+                          Junior
+                        </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link
+                          href="https://lbaleagues.vercel.app/teens/"
+                          target="_blank"
+                        >
+                          Teens
+                        </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link
+                          href="https://lbaleagues.vercel.app/adult/"
+                          target="_blank"
+                        >
+                          Adult
+                        </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link
+                          href="https://lbaleagues.vercel.app/media/"
+                          target="_blank"
+                        >
+                          Media
+                        </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link
+                          href="https://lbaleagues.vercel.app/contact/"
+                          target="_blank"
+                        >
+                          Contact
+                        </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link
+                          href="https://lbaleagues.vercel.app/register/"
+                          target="_blank"
+                        >
+                          Register
+                        </Link>
+                      </li>
                     </ul>
                   </div>
                 )}
