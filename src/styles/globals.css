@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.content-box.wp-em-btn .btn-group {
+    flex-direction: column;
+}
+.team-section .team-grid-block .team-card .item-box .content-box.wp-em-btn .btn-group .primary-btn, .team-section .team-grid-block .team-card .item-box .content-box.wp-em-btn .btn-group .secondary-btn {
+    width: 100%;
+    height: auto;
+}
