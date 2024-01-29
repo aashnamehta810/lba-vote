@@ -47,7 +47,7 @@ const TeamSection = (data: any) => {
                         href={`https://wa.me/17329949780?text=Vote%20for%20${encodeURIComponent(
                           item.name
                         )}`}
-                        className="primary-btn"
+                        className="primary-btn wp-em-btn"
                       >
                         Vote By Whatsapp
                       </a>
@@ -55,7 +55,7 @@ const TeamSection = (data: any) => {
                         href={`mailto:shimon@lbaleagues.com?subject=Vote%20for%20${encodeURIComponent(
                           item.name
                         )}&body=Vote%20for%20${encodeURIComponent(item.name)}`}
-                        className="secondary-btn"
+                        className="secondary-btn wp-em-btn"
                       >
                         Email By Email
                       </a>
