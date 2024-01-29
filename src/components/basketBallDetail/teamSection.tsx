@@ -38,7 +38,7 @@ const TeamSection = (data: any) => {
                       height={335}
                     />
                   </div>
-                  <div className="content-box">
+                  <div className="content-box wp-em-btn">
                     {/* <div className="team-logo">
                   <img src="https://placehold.co/224X52" alt="image" />
                 </div> */}
@@ -47,7 +47,7 @@ const TeamSection = (data: any) => {
                         href={`https://wa.me/17329949780?text=Vote%20for%20${encodeURIComponent(
                           item.name
                         )}`}
-                        className="primary-btn wp-em-btn"
+                        className="primary-btn"
                       >
                         Vote By Whatsapp
                       </a>
@@ -55,7 +55,7 @@ const TeamSection = (data: any) => {
                         href={`mailto:shimon@lbaleagues.com?subject=Vote%20for%20${encodeURIComponent(
                           item.name
                         )}&body=Vote%20for%20${encodeURIComponent(item.name)}`}
-                        className="secondary-btn wp-em-btn"
+                        className="secondary-btn"
                       >
                         Email By Email
                       </a>
